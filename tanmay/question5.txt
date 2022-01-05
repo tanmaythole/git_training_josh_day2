@@ -1,0 +1,18 @@
+Q.5. Difference between --force push and --force-with-lease, You have to show the use of both, also you have to show in what scenario --force-with-lease is used?
+
+Ans:
+force overwrites a remote branch with your local branch. --force-with-lease is a safer option that will not overwrite any work on the remote branch if more commits were added to the remote branch (by another team-member or coworker or what have you). It ensures you do not overwrite someone elses work by force pushing.
+
+When to Use Force with Lease :-
+Assuming a regular push does not work, one does not need to use force if they are doing decent day-to-day work. Every day-to-day need is satisfied with force-with-lease. These include any sort of a rebase, particularly:
+Rebase a branch onto another branch,
+Rewording a commit in the past,
+Squashing a few commits together,
+Reordering the commits, or
+Changing the author of a previous commit.
+
+When to Use Force:-
+When doing something nasty. This includes:
+Removing a commit together with its contributions from history,
+Removing a large file that was accidentally committed from history,
+Removing a folder from the repo together with all its history.

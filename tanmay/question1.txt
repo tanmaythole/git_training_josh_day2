@@ -1,0 +1,12 @@
+Q.1. What is cherry-pick? Explain the use case of it also write steps to do it.
+
+Ans:
+Cherry picking is the act of picking a commit from a branch and applying it to another. With the "cherry-pick" command, Git allows you to integrate selected, individual commits from any branch into your current HEAD Brranch. 
+The Following steps are :-
+1. The current branch and HEAD pointer stay at the last commit successfully made.
+
+2. The CHERRY_PICK_HEAD ref is set to point at the commit that introduced the change that is difficult to apply.
+
+3. Paths in which the change applied cleanly are updated both in the index file and in your working tree.
+
+4. For conflicting paths, the index file records up to three versions, as described in the "TRUE MERGE" section of git-merge[1]. The working tree files will include a description of the conflict bracketed by the usual conflict markers <<<<<<< and >>>>>>>.

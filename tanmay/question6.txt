@@ -1,0 +1,7 @@
+Q.6. How to un stage changes from the staged area. write command for it.
+
+Ans:
+Unstaging Files
+There may be cases where we add some files to the staging area but later decide to not include them in the next commit. To make sure that these staged files are not included in the commit we need to unstage them. Git provides us with a few different commands to do this.
+Command for this :- 
+$ git reset <file-name>
