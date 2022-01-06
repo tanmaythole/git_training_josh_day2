@@ -1,0 +1,6 @@
+Q.2. How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+
+Ans:
+To add another remote repositories use :- git remote add <name> <url>
+ 
+ We use multiple repositories when the codebase is to large to maintain in a single git repository. Git can't handle 10s of thousand's of user's and 100s of petabyte of data in a single repository. 
